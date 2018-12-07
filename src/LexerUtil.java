@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 public class LexerUtil {
 
@@ -9,12 +6,12 @@ public class LexerUtil {
     private final String[] operators;
     private final char commentMark;
 
-    private LinkedHashMap<String, String> identifiers;
-    private LinkedHashMap<String, String> textValues;
-    private LinkedHashMap<String, String> hexValues;
+    private Map<String, String> textValues;
+    private Map<String, String> identifiers;
+    private Map<String, String> hexValues;
 
-    private ArrayList<String> tokens;
-    private ArrayList<String> identifiersAndValues;
+    private List<String> tokens;
+    private List<String> identifiersAndValues;
 
     public LexerUtil() {
         keywords = new String[] {"PROGRAMA", "FINPROG", "SI", "ENTONCES",
@@ -78,7 +75,8 @@ public class LexerUtil {
         return valid;
     }
 
-    public ArrayList<String[]> splitIntoLexemes(ArrayList<String> lines) {
+    public ArrayList<String[]> splitIntoLexemes(List<String> lines) {
+        lines = (ArrayList<String>) lines;
         ArrayList<String[]> lexemes = new ArrayList<>();
 
         // Secciona cadenas en lexemas.
@@ -117,8 +115,9 @@ public class LexerUtil {
         return lexemes;
     }
 
-    private ArrayList<String> extractTokens(ArrayList<String[]> lexemes)
+    private ArrayList<String> extractTokens(List<String[]> lexemes)
             throws InvalidTokenException {
+        lexemes = (ArrayList<String[]>) lexemes;
         ArrayList<String> tokens = new ArrayList<>();
 
         for(int i = 0; i < lexemes.size(); i++)
@@ -132,7 +131,9 @@ public class LexerUtil {
         return tokens;
     }
 
-    public ArrayList<String> getTokens(ArrayList<String[]> lexemes) {
+    public ArrayList<String> getTokens(List<String[]> lexemes) {
+        lexemes = (ArrayList<String[]>) lexemes;
+
         try {
             if(tokens == null)
                 tokens = extractTokens(lexemes);
@@ -141,7 +142,7 @@ public class LexerUtil {
             System.err.println(e.getMessage());
             System.exit(-1);
         }
-        return tokens;
+        return (ArrayList<String>) tokens;
     }
 
     private String assessLexeme(String lexeme, int line)
@@ -219,7 +220,8 @@ public class LexerUtil {
         return mark;
     }
 
-    private ArrayList<String> buildIdentifiersAndValues(ArrayList<String[]> lexemes) {
+    private ArrayList<String> buildIdentifiersAndValues(List<String[]> lexemes) {
+        lexemes = (ArrayList<String[]>) lexemes;
         getTokens(lexemes);
 
         ArrayList<String> identifiersAndValues = new ArrayList<>();
@@ -246,9 +248,11 @@ public class LexerUtil {
         return identifiersAndValues;
     }
 
-    public ArrayList<String> getIdentifiersAndValues(ArrayList<String[]> lexemes) {
+    public ArrayList<String> getIdentifiersAndValues(List<String[]> lexemes) {
+        lexemes = (ArrayList<String[]>) lexemes;
+
         if(identifiersAndValues == null)
             identifiersAndValues = buildIdentifiersAndValues(lexemes);
-        return identifiersAndValues;
+        return (ArrayList<String>) identifiersAndValues;
     }
 }

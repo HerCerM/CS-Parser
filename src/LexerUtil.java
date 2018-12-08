@@ -1,4 +1,6 @@
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class LexerUtil {
 
@@ -36,7 +38,9 @@ public class LexerUtil {
     private boolean isIdentifier(String identifier) {
         boolean valid = false;
 
-        if(identifier.length() <= 16 && Character.isLetter(identifier.charAt(0)))
+        if(identifier.matches("[A-Za-z][[A-Za-z]*+[0-9]*]*")
+                && identifier.length() <= 16
+                && identifier.length() > 0)
             valid = true;
 
         return valid;
@@ -45,22 +49,16 @@ public class LexerUtil {
     private boolean isHexValue(String value) {
         boolean valid = false;
 
-        try {
-            if(value.substring(0, 2).equals("0x")) {
-                Integer.parseInt(value.substring(2, value.length()), 16);
-                valid = true;
-            }
-        }
-        catch(NumberFormatException ignored) {}
-        finally {
-            return valid;
-        }
+        if(value.matches("0x([0-9]|[A-F])*"))
+            valid = true;
+
+        return valid;
     }
 
     private boolean isTextValue(String value) {
         boolean valid = false;
 
-        if(value.charAt(0) == '"' && value.charAt(value.length() - 1) == '"')
+        if(value.matches("\"([A-Za-z]|[0-9]|\\s)*\""))
             valid = true;
 
         return valid;
@@ -76,37 +74,13 @@ public class LexerUtil {
     }
 
     public ArrayList<String[]> splitIntoLexemes(List<String> lines) {
-        lines = (ArrayList<String>) lines;
         ArrayList<String[]> lexemes = new ArrayList<>();
 
         // Secciona cadenas en lexemas.
         for(String line : lines) {
             if (line.contains("\"")) {
-                String[] splittedLines = line.split("(?=\")");
-                ArrayList<String> processedLines = new ArrayList<>();
-                ArrayList<String> finalSplit = new ArrayList<>();
-
-                for(int i = 0; i < splittedLines.length; i++) {
-                    if(!splittedLines[i].contains("\""))
-                        processedLines.add(splittedLines[i].trim());
-                    else
-                    if(i < splittedLines.length - 1)
-                        processedLines.add(splittedLines[i] +
-                                splittedLines[i++ + 1]);
-                    else
-                        processedLines.add(splittedLines[i]);
-                }
-
-                for(String string : processedLines)
-                    if(string.contains("\""))
-                        finalSplit.add(string);
-                    else {
-                        String[] split = string.split(" ");
-                        for(String s : split)
-                            finalSplit.add(s);
-                    }
-
-                lexemes.add(finalSplit.toArray(new String[0]));
+                String delimiter = "[^\\s]*\"[^\"]*\"[^\\s]*|\\s";
+                lexemes.add(splitWithDelimiters(line, delimiter, " "));
             }
             else {
                 lexemes.add(line.split(" "));
@@ -117,7 +91,6 @@ public class LexerUtil {
 
     private ArrayList<String> extractTokens(List<String[]> lexemes)
             throws InvalidTokenException {
-        lexemes = (ArrayList<String[]>) lexemes;
         ArrayList<String> tokens = new ArrayList<>();
 
         for(int i = 0; i < lexemes.size(); i++)
@@ -132,8 +105,6 @@ public class LexerUtil {
     }
 
     public ArrayList<String> getTokens(List<String[]> lexemes) {
-        lexemes = (ArrayList<String[]>) lexemes;
-
         try {
             if(tokens == null)
                 tokens = extractTokens(lexemes);
@@ -221,7 +192,6 @@ public class LexerUtil {
     }
 
     private ArrayList<String> buildIdentifiersAndValues(List<String[]> lexemes) {
-        lexemes = (ArrayList<String[]>) lexemes;
         getTokens(lexemes);
 
         ArrayList<String> identifiersAndValues = new ArrayList<>();
@@ -249,10 +219,42 @@ public class LexerUtil {
     }
 
     public ArrayList<String> getIdentifiersAndValues(List<String[]> lexemes) {
-        lexemes = (ArrayList<String[]>) lexemes;
-
         if(identifiersAndValues == null)
             identifiersAndValues = buildIdentifiersAndValues(lexemes);
         return (ArrayList<String>) identifiersAndValues;
+    }
+
+    private static String[] splitWithDelimiters(String line,
+                                                String regex,
+                                                String excludedDelimiter) {
+        List<String> parts = new ArrayList<String>();
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(line);
+
+        int lastEnd = 0;
+        while(matcher.find()) {
+            int start = matcher.start();
+            if(lastEnd != start) {
+                String nonDelimiter = line.substring(lastEnd, start);
+                parts.add(nonDelimiter);
+            }
+
+            String delimiter = matcher.group();
+            if(!delimiter.equals(excludedDelimiter))
+                parts.add(delimiter);
+
+            lastEnd = matcher.end();
+        }
+
+        if(lastEnd != line.length()) {
+            String nonDelim = line.substring(lastEnd);
+            parts.add(nonDelim);
+        }
+
+        String[] res =  parts.toArray(new String[]{});
+        System.out.println("result: " + Arrays.toString(res));
+
+        return res;
     }
 }

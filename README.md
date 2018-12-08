@@ -3,7 +3,7 @@
 2. Correr el comando `java Lexer factorial.mio`.
 
 # Estilo de codificación recomendado
-1. Convención de nombrado de varialbes y métodos: camelCase.
+1. Convención de nombrado de variables y métodos: camelCase.
 ### Ejemplos
 `miVariable`, `miMetodo()`
 

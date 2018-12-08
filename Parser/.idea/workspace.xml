@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="789737aa-7521-4595-ac6c-57ba3dcc62d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="789737aa-7521-4595-ac6c-57ba3dcc62d0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +15,7 @@
       <file leaf-file-name="InvalidTokenException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InvalidTokenException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="18">
               <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
               <folding>
                 <element signature="e#104#105#0" expanded="true" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="162">
               <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,12 +40,11 @@
       <file leaf-file-name="LexerUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LexerUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="36">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#isKeyword#0;class#LexerUtil#0" />
-                <element signature="e#7806#7814#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -74,7 +71,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -104,9 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,10 +140,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOP-movies/MoviesWebServiceAndAPI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -247,54 +244,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="-7" width="1247" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3289256" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3289256" />
-      <window_info anchor="right" id="Run" order="14" weight="0.38500422" />
-      <window_info anchor="right" id="Terminal" order="16" weight="0.43723673" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46942148" visible="true" weight="0.22240944" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.5305785" side_tool="true" visible="true" weight="0.22240944" />
-      <window_info anchor="right" id="Ant Build" order="11" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.45785123" />
       <window_info anchor="right" id="Palette" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="13" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.25123966" />
-      <window_info id="Structure" order="1" sideWeight="0.5305785" side_tool="true" visible="true" weight="0.22240944" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="10" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="5" weight="0.3289256" />
-      <window_info anchor="right" id="Run" order="15" weight="0.1769166" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.45785123" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.3289256" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46942148" visible="true" weight="0.22240944" />
+      <window_info anchor="right" id="Run" order="15" weight="0.1769166" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.3289256" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.25123966" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4677686" visible="true" weight="0.2021904" />
+      <window_info id="Structure" order="1" sideWeight="0.5322314" side_tool="true" visible="true" weight="0.2021904" />
+      <window_info anchor="right" id="Ant Build" order="12" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.45785123" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="13" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="10" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.3289256" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -306,6 +282,45 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/InvalidTokenException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <folding>
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LexerUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isKeyword#0;class#LexerUtil#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/InvalidTokenException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -334,7 +349,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isKeyword#0;class#LexerUtil#0" />
-            <element signature="e#7806#7814#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -371,7 +385,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isKeyword#0;class#LexerUtil#0" />
-            <element signature="e#7806#7814#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -415,7 +428,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isKeyword#0;class#LexerUtil#0" />
-            <element signature="e#7806#7814#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -456,7 +468,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isKeyword#0;class#LexerUtil#0" />
-            <element signature="e#7806#7814#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -489,7 +500,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isKeyword#0;class#LexerUtil#0" />
-            <element signature="e#7806#7814#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -526,7 +536,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isKeyword#0;class#LexerUtil#0" />
-            <element signature="e#7806#7814#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -570,7 +579,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isKeyword#0;class#LexerUtil#0" />
-            <element signature="e#7806#7814#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -578,19 +586,18 @@
     <entry file="file://$PROJECT_DIR$/src/Keywords.java" />
     <entry file="file://$PROJECT_DIR$/src/LexerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="36">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isKeyword#0;class#LexerUtil#0" />
-            <element signature="e#7806#7814#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="162">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -600,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InvalidTokenException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="18">
           <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
           <folding>
             <element signature="e#104#105#0" expanded="true" />
@@ -612,7 +619,7 @@
     <entry file="file://$PROJECT_DIR$/src/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>

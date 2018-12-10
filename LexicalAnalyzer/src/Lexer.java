@@ -13,7 +13,7 @@ public class Lexer {
 
         // Ruta relativa del archivo.
         String fileName = args[0].split("[.]")[0];
-        String path = "../../../resources/";
+        String path = "";
 
         // Eliminar archivos si existen.
         fileUtil.deleteIfExists(path + fileName + ".sim");

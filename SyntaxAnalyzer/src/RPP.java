@@ -22,23 +22,8 @@ public class RPP {
     private void parsePROG() {
         match("PROGRAMA");
         match("[id]");
-        parseSENTS();
-        match("FINPROG");
-    }
-
-    private void parseSENTS() {
-        String topLetter = word.get(0);
         parseSENT();
-        parseFSENT();
-    }
-
-    private void parseFSENT() {
-        String topLetter = word.get(0);
-        if(topLetter.equals("FINPROG")){
-        }
-        else {
-            parseSENT();
-        }
+        match("FINPROG");
     }
 
     private void parseSENT() {
@@ -61,7 +46,7 @@ public class RPP {
             match("REPITE");
             parseELEM();
             match("VECES");
-            parseSENTS();
+            parseSENT();
             match("FINREP");
             if(!topLetter.equals("FINPROG")) {
                 parseSENT();
@@ -127,7 +112,7 @@ public class RPP {
     private void parseFENTONCES() {
         String topLetter = word.get(0);
         if(topLetter.equals("[id]") || topLetter.equals("#")) {
-            parseSENTS();
+            parseSENT();
             parseFSENTS();
         }
     }
@@ -136,7 +121,7 @@ public class RPP {
         String topLetter = word.get(0);
         if(topLetter.equals("SINO")) {
             match("SINO");
-            parseSENTS();
+            parseSENT();
             match("FINSI");
         }
     }

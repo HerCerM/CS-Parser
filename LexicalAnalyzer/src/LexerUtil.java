@@ -5,7 +5,8 @@ import java.util.regex.Pattern;
 public class LexerUtil {
 
     private final String[] keywords;
-    private final String[] operators;
+    private final String[] arithmeticOperators;
+    private final String[] relationalOperators;
     private final char commentMark;
 
     private Map<String, String> textValues;
@@ -18,7 +19,8 @@ public class LexerUtil {
     public LexerUtil() {
         keywords = new String[] {"PROGRAMA", "FINPROG", "SI", "ENTONCES",
         "SINO", "FINSI", "REPITE", "VECES", "FINREP", "IMPRIME", "LEE"};
-        operators = new String[] {"+", "-", "/", "*"};
+        arithmeticOperators = new String[] {"+", "-", "/", "*"};
+        relationalOperators = new String[] {"==", "!=", "<", ">", "<=", ">="};
         commentMark = '#';
 
         identifiers = new LinkedHashMap<>();
@@ -64,10 +66,19 @@ public class LexerUtil {
         return valid;
     }
 
-    private boolean isOperator(String operator) {
+    private boolean isArithmeticOperator(String operator) {
         boolean valid = false;
 
-        if(Arrays.asList(operators).contains(operator))
+        if(Arrays.asList(arithmeticOperators).contains(operator))
+            valid = true;
+
+        return valid;
+    }
+
+    private boolean isRelationalOperator(String operator) {
+        boolean valid = false;
+
+        if(Arrays.asList(relationalOperators).contains(operator))
             valid = true;
 
         return valid;
@@ -155,8 +166,12 @@ public class LexerUtil {
 
             validToken = true;
         }
-        else if(isOperator(lexeme)) {
+        else if(isArithmeticOperator(lexeme)) {
             token = "[op_ar]";
+            validToken = true;
+        }
+        else if(isRelationalOperator(lexeme)) {
+            token = "[op_rel]";
             validToken = true;
         }
 

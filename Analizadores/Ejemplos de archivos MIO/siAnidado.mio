@@ -1,0 +1,14 @@
+PROGRAMA anidado
+    SI carro > 0x434
+    ENTONCES
+        SI Pepe > JUAN
+        ENTONCES
+            Hue = Hue + 0x3
+        SINO
+            SI carro < 0x3
+                ENTONCES
+                Hue = Pepe
+            
+        FINSI
+    FINSI
+FINPROG

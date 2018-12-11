@@ -1,54 +1,58 @@
-# Ejecutar el programa
-1. Desde la línea de comandos, colocarse en el directorio `Parser/out/production/Parser`.
-2. Correr el comando `java Lexer factorial.mio`.
+# Acerca de
+El repositorio contiene un analizador léxico y un analizador sintáctico para el lenguaje MIO. Este lenguaje está definido por la gramática libre de contexto presentada en la siguiente subsección. Para leer más acerca de la implementación de los analizadores puede referirse al manual de usario.
 
-# Estilo de codificación recomendado
-## 1. Convención de nombrado de variables y métodos 
-Utilizar camelCase.
-
-### Ejemplos
-`miVariable`, `miMetodo()`
-
-No deseado: `mi_variable`, etc. 
-
-## 2. Llaves 
-Se abren en la misma línea del paréntesis de cierre de la lista de parámetros y se cierra en su propia línea.
-
-### Ejemplo
+## Gramática para el lenguaje MIO
 ```
-public void miMetodo() {
-  // Contenido
-}
-```
-No deseado:
-```
-public void miMetodo() 
-{
-  // Contenido
-}
-```
-## 3. Comentarios
-Para comentarios de una sola línea, no añadir símbolos extra en adición al comentario como tal.
-
-### Ejemplo
-`// Un comentario`
-
-No deseado: `//------Un comentario------`, etc. 
-
-Para comentarios de bloques, proporcionar su propia línea a los marcadores de inicio y fin de comentario.
-
-### Ejemplo
-```
-/*
-Un comentario
-de varias líneas
-*/
+Símbolo inicial: <PROG>
+Reglas:
+<PROG>    -> PROGRAMA[id]<SENTS>FINPROG
+<SENTS>   -> <SENT><SENTS>
+<SENTS>   -> <SENT>
+<SENT>    -> [id]=<ELEM>[op_ar]<ELEM>
+<SENT>    -> [id]=<ELEM>
+<SENT>    -> SI<COMPARA>ENTONCES<SENTS>SINO<SENTS>FINSI
+<SENT>    -> SI<COMPARA>ENTONCES<SENTS>FINSI
+<SENT>    -> REPITE<ELEM>VECES<SENTS>FINREP
+<SENT>    -> IMPRIME<ELEM>
+<SENT>    -> IMPRIME[txt]
+<SENT>    -> LEE[id]
+<SENT>    -> #[comentario]
+<ELEM>    -> [id]
+<ELEM>    -> [val]
+<COMPARA> -> [id][op_rel]<ELEM>
 ```
 
-No deseado:
+## Ejemplo de cadena válida
+Este ejemplo puede encontrarse en [aquí](Analizadores/Ejemplos de archivos MIO/factorial.mio). La cadena representa un programa escrito en el lenguaje MIO para calcular el factorial de un número.
+```
+# Programa que calcula el factorial de un número
+PROGRAMA factorial
+# VarX acumula los productos por iteración
+VarX = 0x1
+# VarY contiene el iterador del factor
+VarY = 0x0
+LEE Num
+# Aplica Num! = 1 * 2 * 3 * ... * Num
+REPITE Num VECES
+VarY = VarY + 0x1
+VarX = VarX * VarY
+FINREP
+IMPRIME "Factorial de "
+IMPRIME Num
+IMPRIME " es "
+IMPRIME VarX
+FINPROG 
+```
 
-```
-/* Un comentario
-de varias líneas
-*/
-```
+# Ejecutar los programas
+En la carpeta [Analizadores](Analizadores) se encuentran dos archivos JAR: _analex_ es el analizador léxico y _anasin_, el sintáctico. _analex_ requiere de un archivo MIO, por lo que debe colocarse un archivo con esta extensión en el mismo directorio que los JAR. Para ejecutar _analex_ se escribe en la consola lo siguiente:
+
+`java -jar analex.jar nombreDelArchivo.mio`
+
+Si el programa se ejecuta correctamente, los archivos LEX y SIM deben crearse. En caso contrario, se reporta la línea del primer error hallado. 
+
+_anasin_ requiere un archivo LEX generado por el _analex_. Para ejecutar _anasin_ se escribe en la consola lo siguiente: 
+
+`java -jar anasin.jar nombreDelArchivo.lex`
+
+Si el programa se ejecuta correctamente, un mensaje de aprobación aparece en la consola. En caso contrario, un mensaje de no aprobado aparece en la consola.

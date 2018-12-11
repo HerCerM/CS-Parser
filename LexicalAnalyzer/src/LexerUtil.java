@@ -154,7 +154,7 @@ public class LexerUtil {
 
             if(!hexValues.containsKey(lexeme))
                 hexValues.put(lexeme, Integer.toString(Integer.parseInt(lexeme.
-                        substring(2, lexeme.length()))));
+                        substring(2, lexeme.length()), 16)));
 
             validToken = true;
         }
@@ -268,7 +268,6 @@ public class LexerUtil {
         }
 
         String[] res =  parts.toArray(new String[]{});
-        System.out.println("result: " + Arrays.toString(res));
 
         return res;
     }

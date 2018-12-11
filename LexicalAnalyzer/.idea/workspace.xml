@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="analex:jar" />
+      <artifact name="LexicalAnalyzer:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -10,18 +10,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LexicalAnalyzer/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LexicalAnalyzer/Lexer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LexicalAnalyzer/LexerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LexicalAnalyzer/LexerUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/factorial.lex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/factorial.mio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/factorial.sim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LexicalAnalyzer/factorial.lex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LexicalAnalyzer/factorial.sim" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LexerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LexerUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SyntaxAnalyzer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/out/production/SyntaxAnalyzer/RPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SyntaxAnalyzer/out/production/SyntaxAnalyzer/RPP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/out/production/SyntaxAnalyzer/Syner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SyntaxAnalyzer/out/production/SyntaxAnalyzer/Syner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/out/production/SyntaxAnalyzer/word.lex" beforeDir="false" afterPath="$PROJECT_DIR$/../SyntaxAnalyzer/out/production/SyntaxAnalyzer/word.lex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/out/production/SyntaxAnalyzer/word.lex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/src/RPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SyntaxAnalyzer/src/RPP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/src/Syner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SyntaxAnalyzer/src/Syner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/src/word.lex" beforeDir="false" afterPath="$PROJECT_DIR$/../SyntaxAnalyzer/src/word.lex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SyntaxAnalyzer/src/word.lex" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +35,7 @@
       <file leaf-file-name="InvalidTokenException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InvalidTokenException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="36">
               <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
               <folding>
                 <element signature="e#104#105#0" expanded="true" />
@@ -49,7 +48,7 @@
       <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-382">
+            <state relative-caret-position="50">
               <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LexerUtil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LexerUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LexerUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+            <state relative-caret-position="216">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#isKeyword#0;class#LexerUtil#0" />
@@ -71,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="68">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -103,16 +102,16 @@
         <option value="$PROJECT_DIR$/src/InvalidTokenException.java" />
         <option value="$PROJECT_DIR$/src/FileTextReader.java" />
         <option value="$PROJECT_DIR$/src/FileUtil.java" />
-        <option value="$PROJECT_DIR$/src/Lexer.java" />
-        <option value="$PROJECT_DIR$/src/LexerUtil.java" />
         <option value="$PROJECT_DIR$/src/factorial.mio" />
         <option value="$PROJECT_DIR$/out/production/LexicalAnalyzer/factorial.mio" />
+        <option value="$PROJECT_DIR$/src/Lexer.java" />
+        <option value="$PROJECT_DIR$/src/LexerUtil.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="61" />
-    <option name="width" value="1331" />
+    <option name="width" value="1310" />
     <option name="height" value="1091" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -163,7 +162,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18505748" />
@@ -277,7 +276,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917355" visible="true" weight="0.21229991" />
-      <window_info id="Structure" order="1" sideWeight="0.5008264" side_tool="true" visible="true" weight="0.21229991" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.5008264" side_tool="true" visible="true" weight="0.21229991" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -700,32 +699,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InvalidTokenException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="36">
           <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
           <folding>
             <element signature="e#104#105#0" expanded="true" />
             <element signature="e#162#163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-382">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LexerUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isKeyword#0;class#LexerUtil#0" />
           </folding>
         </state>
       </provider>
@@ -746,8 +724,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="68">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LexerUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isKeyword#0;class#LexerUtil#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -762,11 +761,12 @@
               <type id="library" />
             </show-content>
           </artifact-editor>
-          <last-edited>analex:jar</last-edited>
+          <last-edited>LexicalAnalyzer:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.18505748" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

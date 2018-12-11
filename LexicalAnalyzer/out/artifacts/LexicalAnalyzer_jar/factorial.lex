@@ -13,7 +13,7 @@ REPITE
 VECES
 [id]
 =
-[val]
+[id]
 [op_ar]
 [val]
 [id]

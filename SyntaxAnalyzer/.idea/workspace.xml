@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SyntaxAnalyzer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d269556e-a955-498e-a961-6bf8c21e4caa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LexicalAnalyzer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/out/production/LexicalAnalyzer/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LexicalAnalyzer/out/production/LexicalAnalyzer/Lexer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/out/production/LexicalAnalyzer/LexerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LexicalAnalyzer/out/production/LexicalAnalyzer/LexerUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/resources/factorial.lex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/resources/factorial.mio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/resources/factorial.sim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/out/production/LexicalAnalyzer/factorial.lex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/out/production/LexicalAnalyzer/factorial.sim" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/src/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LexicalAnalyzer/src/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LexicalAnalyzer/src/LexerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LexicalAnalyzer/src/LexerUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SyntaxAnalyzer/RPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SyntaxAnalyzer/RPP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SyntaxAnalyzer/Syner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SyntaxAnalyzer/Syner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SyntaxAnalyzer/word.lex" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SyntaxAnalyzer/word.lex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SyntaxAnalyzer/word.lex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Syner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/word.lex" beforeDir="false" afterPath="$PROJECT_DIR$/src/word.lex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/word.lex" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +33,14 @@
       <file leaf-file-name="RPP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RPP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="264">
+              <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3687#3688#0" expanded="true" />
-                <element signature="e#3714#3715#0" expanded="true" />
-                <element signature="e#3760#3761#0" expanded="true" />
-                <element signature="e#3792#3793#0" expanded="true" />
+                <element signature="e#3913#3914#0" expanded="true" />
+                <element signature="e#3940#3941#0" expanded="true" />
+                <element signature="e#3986#3987#0" expanded="true" />
+                <element signature="e#4018#4019#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,7 +49,7 @@
       <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="108">
               <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -56,20 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Syner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Syner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Syner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+            <state relative-caret-position="392">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="word.lex" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/word.lex">
+      <file leaf-file-name="factorial.lex" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/production/SyntaxAnalyzer/factorial.lex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="162">
+              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -86,6 +88,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>parseSENTS</find>
+      <find>FINSI</find>
+      <find>ELEM</find>
     </findStrings>
     <replaceStrings>
       <replace>parseSENT</replace>
@@ -98,15 +102,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/FileUtil.java" />
-        <option value="$PROJECT_DIR$/src/RPP.java" />
         <option value="$PROJECT_DIR$/src/word.lex" />
+        <option value="$PROJECT_DIR$/src/factorial.lex" />
+        <option value="$PROJECT_DIR$/out/production/SyntaxAnalyzer/si.lex" />
+        <option value="$PROJECT_DIR$/src/RPP.java" />
+        <option value="$PROJECT_DIR$/out/production/SyntaxAnalyzer/factorial.lex" />
         <option value="$PROJECT_DIR$/src/Syner.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="61" />
-    <option name="width" value="1331" />
+    <option name="width" value="1310" />
     <option name="height" value="1091" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -157,7 +164,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LexicalAnalyzer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.18505748" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -242,7 +252,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="-7" width="1247" height="735" extended-state="6" />
+    <frame x="41" y="-7" width="1247" height="735" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -253,18 +263,18 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.20495868" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.18181819" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3289256" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.6595041" visible="true" weight="0.26790228" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info id="Structure" order="6" sideWeight="0.34049585" side_tool="true" visible="true" weight="0.26790228" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.65829146" visible="true" weight="0.20387532" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32396695" />
+      <window_info id="Structure" order="6" sideWeight="0.34170854" side_tool="true" weight="0.3251318" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Debug" order="8" weight="0.26200506" />
+      <window_info anchor="right" id="Debug" order="8" weight="0.29401854" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -305,7 +315,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RPP.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RPP.java</url>
+          <line>7</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -323,37 +347,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/RPP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3687#3688#0" expanded="true" />
-            <element signature="e#3714#3715#0" expanded="true" />
-            <element signature="e#3760#3761#0" expanded="true" />
-            <element signature="e#3792#3793#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Syner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/word.lex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -361,9 +354,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/factorial.lex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/SyntaxAnalyzer/si.lex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/SyntaxAnalyzer/factorial.lex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RPP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3913#3914#0" expanded="true" />
+            <element signature="e#3940#3941#0" expanded="true" />
+            <element signature="e#3986#3987#0" expanded="true" />
+            <element signature="e#4018#4019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Syner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>SyntaxAnalyzer:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.18505748" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SyntaxAnalyzer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.18505748" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -371,6 +478,17 @@
             <option name="proportions">
               <list>
                 <option value="0.3048048" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

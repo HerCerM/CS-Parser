@@ -33,11 +33,9 @@ public class Lexer {
 
         // Creación y llenado de archivos.
         for(String s : identifiersAndValues) {
-            System.out.println(s);
             fileUtil.appendToFile(s, path + fileName + ".sim");
         }
         for(String token : tokens) {
-            System.out.println(token);
             fileUtil.appendToFile(token, path + fileName + ".lex");
         }
     }

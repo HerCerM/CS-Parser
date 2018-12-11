@@ -14,8 +14,7 @@ public class RPP {
         if(word.size() > 0 && word.get(0).equals(letter))
             word.remove(0);
         else {
-            System.err.println("ERROR: No match");
-            System.exit(1);
+            error();
         }
     }
 
@@ -86,6 +85,9 @@ public class RPP {
             parseELEM();
             parseFELEM();
         }
+        else {
+            error();
+        }
     }
 
     private void parseFELEM() {
@@ -111,10 +113,8 @@ public class RPP {
 
     private void parseFENTONCES() {
         String topLetter = word.get(0);
-        if(topLetter.equals("[id]") || topLetter.equals("#")) {
-            parseSENT();
-            parseFSENTS();
-        }
+        parseSENT();
+        parseFSENTS();
     }
 
     private void parseFSENTS() {
@@ -124,6 +124,8 @@ public class RPP {
             parseSENT();
             match("FINSI");
         }
+        else
+            match("FINSI");
     }
 
     private void parseFIMPRIME() {
@@ -132,6 +134,8 @@ public class RPP {
             parseELEM();
         else if(topLetter.equals("[txt]"))
             match("[txt]");
+        else
+            error();
     }
 
     private void parseELEM() {
@@ -140,6 +144,8 @@ public class RPP {
             match("[id]");
         else if(topLetter.equals("[val]"))
             match("[val]");
+        else
+            error();
     }
 
     private void parseCOMPARA() {
@@ -149,6 +155,11 @@ public class RPP {
             match("[op_rel]");
             parseELEM();
         }
+    }
+
+    private void error() {
+        System.err.println("ERROR: No match");
+        System.exit(1);
     }
 
     public List<String> getWord() {

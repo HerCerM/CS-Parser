@@ -1,5 +1,5 @@
 # Acerca de
-El repositorio contiene un analizador léxico y un analizador sintáctico para el lenguaje MIO. Este lenguaje está definido por la gramática libre de contexto presentada en la siguiente subsección. Para leer más acerca de la implementación de los analizadores puede referirse al manual de usario.
+El repositorio contiene un analizador léxico y un analizador sintáctico para el lenguaje MIO. Este lenguaje está definido por la gramática libre de contexto presentada en la siguiente subsección. Para leer más acerca de este proyecto puede referirse al [manual de usuario](Analizadores/ManualDeUsuario.pdf).
 
 ## Gramática para el lenguaje MIO
 ```

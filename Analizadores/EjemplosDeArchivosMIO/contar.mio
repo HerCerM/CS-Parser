@@ -1,0 +1,7 @@
+PROGRAMA contar
+VarX = 0x00
+SI varx < 0x0A ENTONCES
+VarX = VarX + 0x01
+IMPRIME VarX
+FINSI
+FINPROG
